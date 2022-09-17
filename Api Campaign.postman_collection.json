@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "f42bf5b3-b778-48e6-a659-e2106c043062",
+		"name": "Api Campaign",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23399582"
+	},
+	"item": [
+		{
+			"name": "Campaigns",
+			"item": [
+				{
+					"name": "getAllCampaign",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://campaignttask.test/api/compaign",
+							"protocol": "http",
+							"host": [
+								"campaignttask",
+								"test"
+							],
+							"path": [
+								"api",
+								"compaign"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_one_campaign",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/compaign/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"compaign",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://campaignttask.test",
+			"type": "string"
+		}
+	]
+}
